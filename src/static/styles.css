@@ -130,11 +130,11 @@ header h1 {
   border-radius: 4px;
 }
 
+/* Responsive layout: single column on mobile, 2:1 grid on desktop */
 main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
@@ -149,7 +149,6 @@ section {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
 }
 
 section h3 {
